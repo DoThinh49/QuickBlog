@@ -78,14 +78,14 @@ const Blog = () => {
 
       <div className="text-center mt-20 text-gray-600">
         <p className="text-primary py-4 font-medium">
-          Published on {Moment(data.createdAt).format("MMMM Do YYYY")}
+          Đăng vào {Moment(data.createdAt).format("MMMM Do YYYY")}
         </p>
         <h1 className="text-2xl sm:text-5xl font-semibold max-w-2xl mx-auto text-gray-800">
           {data.title}
         </h1>
         <h2 className="my-5 max-w-lg truncate mx-auto">{data.subTitle}</h2>
         <p className="inline-block py-1 px-4 rounded-full mb-6 border text-sm border-primary/35 bg-primary/5 font-medium text-primary">
-          Michael Brown
+          Admin
         </p>
       </div>
 
@@ -99,7 +99,7 @@ const Blog = () => {
 
         {/* Comments Section */}
         <div className="mt-14 mb-10 max-w-3xl mx-auto">
-          <p className="font-semibold mb-4">Comments ({comments.length})</p>
+          <p className="font-semibold mb-4">Bình luận ({comments.length})</p>
           <div className="flex flex-col gap-4">
             {comments.map((item, index) => (
               <div
@@ -146,7 +146,7 @@ const Blog = () => {
               type="submit"
               className="bg-primary text-white rounded p-2 px-8 hover:scale-102 transition-all cursor-pointer"
             >
-              Submit
+              Gửi bình luận
             </button>
           </form>
         </div>
@@ -154,7 +154,7 @@ const Blog = () => {
         {/*share buttons*/}
         <div className="my-24 max-w-3xl mx-auto">
           <p className="font-semibold my-4">
-            Share this article on social media
+            Chia sẻ bài viết trên mạng xã hội
           </p>
           <div className="flex">
             <img src={assets.facebook_icon} width={50} alt="" />

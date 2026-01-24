@@ -70,7 +70,7 @@ const Login = () => {
               type="submit"
               className="w-full py-3 font-medium bg-primary text-white rounded cursor-pointer hover:bg-primary/90 transition-all"
             >
-              Login
+              Đăng nhập
             </button>
           </form>
         </div>
