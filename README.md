@@ -44,6 +44,20 @@
 ## 🚀 Hướng Dẫn Cài Đặt & Chạy Thử (Local)
 
 ### 1. Clone repository
-```bash
 git clone https://github.com/DoThinh49/QuickBlog.git
 cd QuickBlog
+
+### 2. Cài đặt các gói thư viện
+npm install
+
+### 3. Khởi động môi trường phát triển
+npm run dev
+
+Mở trình duyệt truy cập: http://localhost:3000
+
+---
+
+## 👨‍💻 Tác Giả & Bản Quyền
+
+- **Tác giả**: Đỗ Khắc Thịnh
+- **Bản quyền**: © 2026 QuickBlog. Phát triển bởi Đỗ Khắc Thịnh.
