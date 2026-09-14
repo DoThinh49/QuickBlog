@@ -1,63 +1,163 @@
-# ✍️ QuickBlog — Nền tảng Viết Blog & Chia sẻ Bài viết Công nghệ
+# ✍️ QuickBlog — Nền tảng Viết Blog Thông minh Tích hợp AI (MERN Stack)
 
 <p align="center">
-  <strong>Dự án Web Blog cá nhân hiện đại, tối ưu trải nghiệm đọc và quản lý nội dung nhanh chóng.</strong>
+  <strong>Hệ thống Blog Fullstack hiện đại hỗ trợ soạn thảo nội dung, tự động tạo bài viết bằng Google Gemini AI và lưu trữ ảnh đám mây qua ImageKit.</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Next.js-React-black?style=for-the-badge&logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/TailwindCSS-Modern_UI-38bdf8?style=for-the-badge&logo=tailwindcss" alt="TailwindCSS" />
-  <img src="https://img.shields.io/badge/TypeScript-Enabled-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-19.2.0-blue?style=for-the-badge&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-7.2.4-646CFF?style=for-the-badge&logo=vite" alt="Vite" />
+  <img src="https://img.shields.io/badge/Node.js-Express_5-green?style=for-the-badge&logo=node.js" alt="Node.js" />
+  <img src="https://img.shields.io/badge/MongoDB-Mongoose-47A248?style=for-the-badge&logo=mongodb" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Google_Gemini-AI_2.5_Flash_Lite-orange?style=for-the-badge&logo=google" alt="Gemini AI" />
+  <img src="https://img.shields.io/badge/TailwindCSS-v4.1.18-38bdf8?style=for-the-badge&logo=tailwindcss" alt="TailwindCSS" />
+  <img src="https://img.shields.io/badge/ImageKit-Cloud_Upload-0055FF?style=for-the-badge" alt="ImageKit" />
 </p>
 
 ---
 
-## 📖 Giới thiệu Dự án
+## 📖 Giới thiệu dự án
 
-**QuickBlog** là nền tảng Blog cá nhân được thiết kế để chia sẻ kiến thức công nghệ, lập trình và câu chuyện cuộc sống với giao diện tối giản, thanh lịch và tốc độ tải trang vượt trội.
+**QuickBlog** là ứng dụng Web Blog Fullstack được xây dựng trên nền tảng **MERN Stack** gồm MongoDB, Express, React và Node.js.
 
-- **Tác giả / Lập trình viên**: **Đỗ Khắc Thịnh**
-- **GitHub Profile**: [@DoThinh49](https://github.com/DoThinh49)
+Dự án cung cấp giải pháp toàn diện cho việc sáng tạo và quản lý nội dung blog, bao gồm soạn thảo bài viết, hỗ trợ tạo nội dung bằng **Google Gemini AI**, tải hình ảnh lên **ImageKit**, hệ thống bình luận và bảng điều khiển quản trị.
 
----
-
-## ✨ Tính Năng Chính
-
-- 📝 **Trình Soạn thảo Tiện lợi**: Hỗ trợ viết bài bằng cú pháp Markdown trực quan, chèn code, hình ảnh dễ dàng.
-- 🏷️ **Phân loại Danh mục & Thẻ Tag**: Tổ chức bài viết khoa học theo chủ đề (Lập trình, Công nghệ, Thủ thuật...).
-- 🔍 **Tìm kiếm Nhanh**: Tìm kiếm bài viết theo từ khóa và tiêu đề theo thời gian thực.
-- 📱 **Giao diện Tương thích Đa thiết bị**: Tối ưu hiển thị hoàn hảo trên cả Desktop, Tablet và Mobile.
-- ⚡ **Tối ưu SEO**: Tự động sinh Meta Tags, OpenGraph và cấu trúc bài viết chuẩn Google Search.
-- 🌓 **Hỗ trợ Giao diện Sáng/Tối (Light/Dark Mode)**: Tùy chỉnh chế độ đọc bài bảo vệ mắt ban đêm.
+- **Tác giả / Lập trình viên:** Đỗ Khắc Thịnh
+- **GitHub:** [@DoThinh49](https://github.com/DoThinh49)
 
 ---
 
-## 🛠️ Công Nghệ Sử Dụng (Tech Stack)
+## ✨ Tính năng nổi bật
 
-- **Frontend**: Next.js / React, TypeScript
-- **Styling**: TailwindCSS & Vanilla CSS
-- **Icon System**: Lucide Icons
-- **Content Format**: Markdown / MDX Parser
+### 🤖 1. Hỗ trợ viết Blog bằng AI
+
+- Tích hợp **Google Gemini AI** thông qua thư viện `@google/genai`.
+- Sử dụng model **gemini-2.5-flash-lite**.
+- Hỗ trợ tự động tạo nội dung bài viết dựa trên yêu cầu của người dùng.
+
+### 📝 2. Soạn thảo nội dung
+
+- Tích hợp **Quill Rich Text Editor**.
+- Hỗ trợ định dạng nội dung trực quan.
+- Sử dụng **Marked** để xử lý nội dung Markdown.
+- Hỗ trợ tạo, chỉnh sửa và quản lý bài viết.
+
+### 🖼️ 3. Upload và quản lý hình ảnh
+
+- Sử dụng **Multer** để xử lý file upload.
+- Tích hợp **ImageKit SDK** để lưu trữ hình ảnh trên cloud.
+- Hỗ trợ upload hình ảnh bìa cho bài viết.
+
+### 💬 4. Hệ thống bình luận
+
+- Người dùng có thể bình luận trên bài viết.
+- Dữ liệu bình luận được lưu trữ trong MongoDB.
+- Quản trị viên có thể quản lý bình luận.
+
+### 🛡️ 5. Quản trị và bảo mật
+
+- Xác thực người dùng bằng **JWT**.
+- Hỗ trợ đăng nhập và phân quyền.
+- Quản lý bài viết và danh mục.
+- Chuyển đổi trạng thái bài viết giữa **Published** và **Draft**.
+- Quản lý và kiểm duyệt bình luận.
 
 ---
 
-## 🚀 Hướng Dẫn Cài Đặt & Chạy Thử (Local)
+## 🛠️ Công nghệ sử dụng
 
-### 1. Clone repository
+### Frontend
+
+- **React 19**
+- **Vite 7**
+- **React Router DOM 7**
+- **Tailwind CSS 4**
+- **Motion**
+- **Quill**
+- **Marked**
+- **Axios**
+- **React Hot Toast**
+- **React Toastify**
+
+### Backend
+
+- **Node.js**
+- **Express 5**
+- **MongoDB**
+- **Mongoose**
+- **Google Gemini AI**
+- **ImageKit**
+- **JWT**
+- **Multer**
+
+---
+
+## 📁 Cấu trúc dự án
+
+```text
+QuickBlog/
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── server/
+│   ├── configs/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+🚀 Hướng dẫn cài đặt và chạy dự án
+1. Clone repository
 git clone https://github.com/DoThinh49/QuickBlog.git
 cd QuickBlog
-
-### 2. Cài đặt các gói thư viện
+2. Cài đặt Backend
+cd server
 npm install
 
-### 3. Khởi động môi trường phát triển
+Tạo file .env trong thư mục server:
+
+PORT=5000
+MONGODB_URI="your_mongodb_connection_string"
+JWT_SECRET="your_jwt_secret"
+GEMINI_API_KEY="your_gemini_api_key"
+IMAGEKIT_PUBLIC_KEY="your_imagekit_public_key"
+IMAGEKIT_PRIVATE_KEY="your_imagekit_private_key"
+IMAGEKIT_URL_ENDPOINT="your_imagekit_url_endpoint"
+
+Chạy Backend:
+
+npm run server
+3. Cài đặt Frontend
+
+Mở một terminal mới:
+
+cd client
+npm install
 npm run dev
 
-Mở trình duyệt truy cập: http://localhost:3000
+Sau khi chạy thành công, truy cập:
 
----
+http://localhost:5173
+🔐 Biến môi trường
 
-## 👨‍💻 Tác Giả & Bản Quyền
+Các thông tin nhạy cảm như API Key, JWT Secret và MongoDB Connection String không được đưa trực tiếp lên GitHub.
 
-- **Tác giả**: Đỗ Khắc Thịnh
-- **Bản quyền**: © 2026 QuickBlog. Phát triển bởi Đỗ Khắc Thịnh.
+Thêm các dòng sau vào .gitignore:
+
+.env
+node_modules/
+👨‍💻 Tác giả
+
+Đỗ Khắc Thịnh
+
+GitHub: DoThinh49
