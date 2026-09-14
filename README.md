@@ -116,16 +116,29 @@ QuickBlog/
 │   └── package.json
 │
 └── README.md
-🚀 Hướng dẫn cài đặt và chạy dự án
-1. Clone repository
+```
+
+---
+
+## 🚀 Hướng dẫn cài đặt và chạy dự án
+
+### 1. Clone repository
+
+```bash
 git clone https://github.com/DoThinh49/QuickBlog.git
 cd QuickBlog
-2. Cài đặt Backend
+```
+
+### 2. Cài đặt Backend
+
+```bash
 cd server
 npm install
+```
 
-Tạo file .env trong thư mục server:
+Tạo file `.env` trong thư mục `server`:
 
+```env
 PORT=5000
 MONGODB_URI="your_mongodb_connection_string"
 JWT_SECRET="your_jwt_secret"
@@ -133,31 +146,53 @@ GEMINI_API_KEY="your_gemini_api_key"
 IMAGEKIT_PUBLIC_KEY="your_imagekit_public_key"
 IMAGEKIT_PRIVATE_KEY="your_imagekit_private_key"
 IMAGEKIT_URL_ENDPOINT="your_imagekit_url_endpoint"
+```
 
 Chạy Backend:
 
+```bash
 npm run server
-3. Cài đặt Frontend
+```
+
+### 3. Cài đặt Frontend
 
 Mở một terminal mới:
 
+```bash
 cd client
 npm install
 npm run dev
+```
 
 Sau khi chạy thành công, truy cập:
 
+```text
 http://localhost:5173
-🔐 Biến môi trường
+```
 
-Các thông tin nhạy cảm như API Key, JWT Secret và MongoDB Connection String không được đưa trực tiếp lên GitHub.
+---
 
-Thêm các dòng sau vào .gitignore:
+## 🔐 Biến môi trường
 
+Các thông tin nhạy cảm như API Key, JWT Secret và MongoDB Connection String **không được đưa trực tiếp lên GitHub**.
+
+Thêm các dòng sau vào `.gitignore`:
+
+```text
 .env
 node_modules/
-👨‍💻 Tác giả
+```
 
-Đỗ Khắc Thịnh
+---
 
-GitHub: DoThinh49
+## 👨‍💻 Tác giả
+
+**Đỗ Khắc Thịnh**
+
+GitHub: [DoThinh49](https://github.com/DoThinh49)
+
+---
+
+## 📄 Bản quyền
+
+© 2026 QuickBlog. Phát triển bởi Đỗ Khắc Thịnh.
